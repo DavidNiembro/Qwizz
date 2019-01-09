@@ -2,7 +2,9 @@
 <template>
   <div class="hello">
     <h1>Qwizz</h1>
-    <Card v-for="qwizz of data.quizzes" :key="qwizz.name" :qwizz="qwizz"/>
+    <div style="display:flex">
+      <Card v-for="qwizz of data.quizzes" :key="qwizz.name" :qwizz="qwizz"/>
+    </div>
   </div>
 </template>
 
