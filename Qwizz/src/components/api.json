@@ -1,0 +1,43 @@
+{
+    "type":"success",
+    "quizzes":[
+        {
+            "name": "Test",
+            "questions":[
+                {
+                    "name": "Test",
+                    "description":"Test",
+                    "answers":[
+                        {
+                            "value" : "Test",
+                            "bool": 1
+                        },
+                        {
+                            "value" : "Test",
+                            "bool": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tests",
+            "questions":[
+                {
+                    "name": "Tests",
+                    "description":"Tests",
+                    "answers":[
+                        {
+                            "value" : "Tests",
+                            "bool": 1
+                        },
+                        {
+                            "value" : "Tests",
+                            "bool": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
