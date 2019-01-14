@@ -1,7 +1,9 @@
 <template>
-    <div class="card">
-        {{qwizz.name}}
-    </div>
+    <router-link :to="'/' + qwizz.name">
+        <div class="card">
+            {{qwizz.name}}
+        </div>
+    </router-link>
 </template>
 <script>
 export default {
