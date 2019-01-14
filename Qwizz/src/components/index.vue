@@ -14,7 +14,7 @@ import json from './api.json';
 import Card from "./Card.vue";
 
 export default {
-  name: 'HelloWorld',
+  name: 'index',
   components:{
     Card
   },
