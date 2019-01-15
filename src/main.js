@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import login from './components/login'
 import register from './components/register'
 import index from './components/index'
+import quizz from './components/quizz'
 
 Vue.use(VueRouter)
 Vue.config.productionTip = false
@@ -13,6 +14,7 @@ const routes = [
     {path: '/login', component: login},
     {path: '/register', component: register},
     {path: '/', component: index},
+    {path: '/:id', component: quizz},
 ]
 
 const router = new VueRouter({

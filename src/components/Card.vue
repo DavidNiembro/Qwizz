@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="'/' + qwizz.name">
+    <router-link :to="'/' + qwizz.id">
         <div class="card">
             {{qwizz.name}}
         </div>
