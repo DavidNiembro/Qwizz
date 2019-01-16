@@ -32,6 +32,20 @@
                         "correct": 0
                     }
                 ]
+            },
+            {
+                "question": "Question 3",
+                "image":"image2",
+                "answers":[
+                    {
+                        "value" : "Réponse 3.1",
+                        "correct": 1
+                    },
+                    {
+                        "value" : "Réponse 3.2",
+                        "correct": 0
+                    }
+                ]
             }
         ]
     }

@@ -1,14 +1,20 @@
 <template>
-    <router-link :to="'/' + qwizz.id">
+    <div>
         <div class="card">
-            {{qwizz.name}}
+            {{question.question}}
         </div>
-    </router-link>
+        <Answer v-for="answer of question.answers" :key="answer.value" :answer="answer"/>
+    </div>
 </template>
 <script>
+import Answer from "./answer.vue";
+
 export default {
+    components:{
+        Answer
+    },
     props:{
-        qwizz:{
+        question:{
             type: Object,
         }
     }

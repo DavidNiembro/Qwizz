@@ -5,15 +5,9 @@
     <div style="display:flex">    
         {{this.$route.params.id }}
         {{jsonApi.quizz.title}}
-
-            <Question/>
-            {{question && question.question}}
-            <div v-for="answer of question.answers" :key="answer.value" :answer="answer">
-              {{answer.value}}
-            </div>
-            }}
-            <button v-on:click="change()">Suivant</button></div>
-            
+        <Question :question="question"/>
+        <button v-on:click="change()">Suivant</button>
+    </div>   
   </div>
 </template>
  
