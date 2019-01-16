@@ -2,10 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import login from './components/login'
-import register from './components/register'
+import login from './components/Auth/login'
+import register from './components/Auth/register'
 import index from './components/index'
-import quizz from './components/quizz'
+import quizz from './components/Quizz/index'
 
 Vue.use(VueRouter)
 Vue.config.productionTip = false

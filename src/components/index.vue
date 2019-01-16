@@ -10,7 +10,7 @@
 
 <script>
 import axios from "axios";
-import json from './api.json';
+import json from './Api/api.json';
 import Card from "./Card.vue";
 
 export default {
