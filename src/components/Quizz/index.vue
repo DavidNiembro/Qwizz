@@ -1,14 +1,19 @@
 
 <template>
-  <div class="hello">
-    <h1>Qwizz</h1>
-    <div style="display:flex">    
-        {{this.$route.params.id }}
-        {{jsonApi.quizz.title}}
-        <Question :question="question"/>
-        <button v-on:click="change()">Suivant</button>
-    </div>   
-  </div>
+  <div class="container"> 
+    <h1 class="m-5">{{jsonApi.quizz.title}}</h1>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-10"><Question :question="question"/></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col-9"></div>
+      <div class="col"> 
+        <button v-on:click="previous()" class="btn btn-primary">Revenir</button>
+        <button v-on:click="next()" class="btn btn-primary">Suivant</button>
+      </div>
+    </div>
+  </div>   
 </template>
  
  <script>
@@ -29,16 +34,17 @@ export default {
     }
   },
   methods: {
-      change: function () {
-          this.index = this.index + 1
-          this.question = this.jsonApi.quizz.questions[this.index]
-      }
+    next: function () {
+        this.index = this.index + 1
+        this.question = this.jsonApi.quizz.questions[this.index]
+    },
+    previous: function () {
+        this.index = this.index - 1
+        this.question = this.jsonApi.quizz.questions[this.index]
+    }
   },
   mounted () {
     this.question = this.jsonApi.quizz.questions[this.index]
-    /*axios
-      .get('./api.json')
-      .then(response => (this.data = response))*/
   }
 }
 </script>

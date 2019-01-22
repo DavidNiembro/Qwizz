@@ -1,11 +1,36 @@
 
 <template>
-  <div class="hello">
-    <h1>Qwizz</h1>
-    <div style="display:flex">    
-            <Card v-for="qwizz of data.quizzes" :key="qwizz.name" :qwizz="qwizz"/>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: blue;">
+  <a class="navbar-brand" href="#">Qwizz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row" style="margin-top:25px">
+    <div class="col text-center">
+       <h1 style="fontSize:100px">Qwizz</h1>
     </div>
   </div>
+  <div class="row" style="margin-top:25px">
+    
+    <Card v-for="qwizz of data.quizzes" :key="qwizz.name" :qwizz="qwizz"/>
+    
+  </div>
+</div>
+</div>
 </template>
 
 <script>
@@ -23,11 +48,21 @@ export default {
       data: json
     }
   },
-  /*mounted () {
-    axios
-      .get('./api.json')
-      .then(response => (this.data = response))
-  }*/
+  async mounted () {
+    
+  /*URL = "http://awa-quizz.herokuapp.com/api/quizzes"
+   axios.defaults.headers.common['quizz-token'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0IiwicGFzc3dvcmQiOiIkcGJrZGYyLXNoYTI1NiQyMDAwMCRjNjRWd3RnN0IuQThKeVJrN1AzL1h3JG9BRDloUnVEQTVkWVpKR1Y2cDNpdDBzYVFqdlFBemFZbi9wNW1kSGRDbDQifQ.P-KfTO8nq5oQNC_bIAY5VKOeNLyNbGE-gGrf0oIKQjc' // for POST requests
+   axios.get(URL, {
+      headers: { 
+          'quizz-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0IiwicGFzc3dvcmQiOiIkcGJrZGYyLXNoYTI1NiQyMDAwMCRjNjRWd3RnN0IuQThKeVJrN1AzL1h3JG9BRDloUnVEQTVkWVpKR1Y2cDNpdDBzYVFqdlFBemFZbi9wNW1kSGRDbDQifQ.P-KfTO8nq5oQNC_bIAY5VKOeNLyNbGE-gGrf0oIKQjc',
+          'Content-Type': 'application/json'
+          }
+    }).then(response => {    
+        this.data = response  
+        console.log(response);
+    });
+*/
+  }
 }
 </script>
 

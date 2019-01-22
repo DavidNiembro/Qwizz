@@ -30,6 +30,10 @@
                     {
                         "value" : "Réponse 2.2",
                         "correct": 0
+                    },
+                    {
+                        "value" : "Réponse 2.3",
+                        "correct": 0
                     }
                 ]
             },
