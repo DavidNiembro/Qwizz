@@ -6,8 +6,10 @@ import login from './components/Auth/login'
 import register from './components/Auth/register'
 import index from './components/index'
 import quizz from './components/Quizz/index'
-
+import results from './components/Quizz/results'
+import store from './store/store'
 Vue.use(VueRouter)
+
 Vue.config.productionTip = false
 
 const routes = [   
@@ -15,6 +17,7 @@ const routes = [
     {path: '/register', component: register},
     {path: '/', component: index},
     {path: '/:id', component: quizz},
+    {path: '/:id/results', component: results, props: true},
 ]
 
 const router = new VueRouter({
@@ -22,6 +25,8 @@ const router = new VueRouter({
     mode:'history'
 })
 
+
 new Vue({
-  router,
+    router,
+    store,
 }).$mount('#app');

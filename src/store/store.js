@@ -1,0 +1,51 @@
+import Vue from 'vue';
+import Vuex from 'vuex';
+import Axios from 'axios';
+
+Vue.use(Vuex);
+
+// Accesible with $store.state.count
+
+
+export default new Vuex.Store({
+    state: {
+        results : [],
+        quizzes : []
+      },
+      getters : {
+        RESULTS : state => {
+            return state.results;
+        },
+        QUIZZES : state => {
+            return state.quizzes;
+        }
+      },
+      mutations: {
+        SET_RESULTS : (state,payload) => {
+            state.results = payload
+        },
+        ADD_RESULTS : (state,payload) => {
+            state.results.push(payload)
+        },
+        SET_QUIZZES : (state,payload) => {
+            state.quizzes = payload
+        },
+        ADD_QUIZZES : (state,payload) => {
+            state.quizzes.push(payload)
+        },
+      },
+      actions:{
+        GET_QUIZZES: async (context,payload) => {
+            let { data } = await Axios.get('http://awa-quizz.herokuapp.com/api/quizzes',{headers:{"quizz-token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0IiwicGFzc3dvcmQiOiIkcGJrZGYyLXNoYTI1NiQyMDAwMCRjNjRWd3RnN0IuQThKeVJrN1AzL1h3JG9BRDloUnVEQTVkWVpKR1Y2cDNpdDBzYVFqdlFBemFZbi9wNW1kSGRDbDQifQ.P-KfTO8nq5oQNC_bIAY5VKOeNLyNbGE-gGrf0oIKQjc'}})
+            context.commit('SET_QUIZZES',data)
+         },
+        ADD_RESULT : async (context,payload) => {
+            context.commit('ADD_RESULTS',payload)
+        },
+        SAVE_RESULTS : async (context,payload) => {
+            let { data } = await Axios.post('http://yourwebsite.com/api/results')
+            context.commit('ADD_RESULTS',payload)
+        },
+     },
+});
+
