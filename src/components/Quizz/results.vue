@@ -1,5 +1,6 @@
 <template>
     <div>
+        {{results}}
        <h2>results</h2>
        <div v-for="result of results" :key="result.question">
             {{result.question}}

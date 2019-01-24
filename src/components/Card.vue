@@ -3,11 +3,10 @@
         <router-link :to="'/' + qwizz.id">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                            
                 </div>
             </div>
                 <div style="">
-                    <h2>{{qwizz.name}}</h2>
+                    <h2>{{qwizz.title}}</h2>
                 </div>
         </router-link>
     </div>
