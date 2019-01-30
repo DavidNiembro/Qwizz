@@ -1,21 +1,29 @@
 <template>
-    <div class="register">
-        <div class="login-page">
-            <div class="form">
-                <form class="register-form">
-                  <input type="text" placeholder="name"/>
-                  <input type="password" placeholder="password"/>
-                  <input type="text" placeholder="email address"/>
-                  <button>create</button>
-                  <p class="message">Already registered? <a href="/login">Sign In</a></p>
-                </form>
-          </div>
+    <div>
+        <Header/>
+        <div class="register">
+            <div class="login-page">
+                <div class="form">
+                    <form class="register-form">
+                      <input type="text" placeholder="name"/>
+                      <input type="password" placeholder="password"/>
+                      <input type="text" placeholder="email address"/>
+                      <button>create</button>
+                      <p class="message">Already registered? <a href="/login">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import Header from '../Header.vue';
 export default {
+    name:'register',
+    components:{
+        Header
+    },
 }
 </script>
 <style scoped>

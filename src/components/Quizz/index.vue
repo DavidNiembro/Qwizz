@@ -15,7 +15,7 @@
               <!--<input type="radio" v-bind:id="answer.id" v-bind:name="jsonApi.questions[index].question" v-bind:value="answer.value" v-model="userAnswer">
               <label v-bind:for="answer.id">{{answer.name}}</label>-->
                   <div class="inputGroup">
-                      <input v-bind:id="index" name="group" type="radio" v-bind:value="answer.value" v-model="userAnswer" />
+                      <input v-bind:id="index" name="group" type="radio"  v-bind:value="answer.value" v-model="userAnswer" />
                       <label v-bind:for="index">{{answer.name}}</label>
                   </div>
               </div>
