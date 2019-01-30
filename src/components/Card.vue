@@ -1,11 +1,12 @@
 <template>
     <div class="col-4">
         <router-link :to="'/' + qwizz.id">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" v-bind:style="{'background-image': 'url('+qwizz.image+')'}">
                 <div class="card-body">
                 </div>
             </div>
                 <div style="">
+
                     <h2>{{qwizz.title}}</h2>
                 </div>
         </router-link>

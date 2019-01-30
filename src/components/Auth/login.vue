@@ -48,7 +48,7 @@ export default {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #4CAF50;
+    background: #df091d;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -59,7 +59,7 @@ export default {
     cursor: pointer;
     }
     .form button:hover,.form button:active,.form button:focus {
-    background: #43A047;
+    background: #df091d;
     }
     .form .message {
     margin: 15px 0 0;
@@ -67,7 +67,7 @@ export default {
     font-size: 12px;
     }
     .form .message a {
-    color: #4CAF50;
+    color: #df091d;
     text-decoration: none;
     }
     .form .register-form {
@@ -107,11 +107,11 @@ export default {
     color: #EF3B3A;
     }
     body {
-    background: #76b852; /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background: -moz-linear-gradient(right, #76b852, #8DC26F);
-    background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background: linear-gradient(to left, #76b852, #8DC26F);
+    background: #df091d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #df091d, #df091d);
+    background: -moz-linear-gradient(right, #df091d, #df091d);
+    background: -o-linear-gradient(right, #df091d, #df091d);
+    background: linear-gradient(to left, #df091d, #df091d);
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
