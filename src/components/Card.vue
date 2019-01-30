@@ -26,6 +26,7 @@ export default {
     margin-left: 20px;
     text-align: center;
     vertical-align: middle;
+    color:#df091d;
 }
 .card {
     margin-top: 50px;
