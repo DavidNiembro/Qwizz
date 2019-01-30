@@ -1,11 +1,10 @@
 <template>
     <div>
-        {{results}}
        <h2>results</h2>
+       {{results}}
        <div v-for="result of results" :key="result.question">
-            {{result.question}}
-            <p>La réponse est: {{result.response?'Juste':'Fausse'}}</p>
-           
+            {{result[0]}}
+            <p>La réponse est: {{result.response}}</p>
        </div>
     </div>
 </template>
@@ -14,7 +13,12 @@
 export default {
     computed : {
         results(){
-            return this.$store.getters.RESULTS
+            return this.$store.getters.RESULTS 
+        }
+    },
+    created() {
+        if(this.results.length < 1){
+            this.$router.push('/');
         }
     }
 }

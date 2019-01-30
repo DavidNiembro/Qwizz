@@ -1,5 +1,4 @@
 <template>
-
   <div class="container">
     <h1 class="m-5">{{jsonApi.title}}</h1>
     <div class="row">
@@ -25,7 +24,7 @@
       <div class="col"></div>
       <div class="col-9"></div>
       <div class="col"> 
-        <button v-on:click="previous()" class="btn btn-primary">Revenir</button>
+        <button v-if="index > 0" v-on:click="previous()" class="btn btn-primary">Revenir</button>
         <button v-on:click="next()" class="btn btn-primary">Suivant</button>
       </div>
     </div>
@@ -42,7 +41,8 @@ export default {
   data () {
     return {
       index:0,
-      userAnswer:null
+      userAnswer:null,
+      answers:[]
     }
   },
   methods: {
@@ -51,14 +51,17 @@ export default {
           let correct = false;
           this.jsonApi.questions[this.index].answers.forEach(function(answer) {
               if(answer.value == userAnswer){
-                correct = answer.correct;
+                correct = answer.value;
               };
           });
+          let question = this.jsonApi.questions[this.index]
+          this.answers[question.id]=[];
+          this.answers[question.id].push({"questions":question,"response":correct})
           
-          let question = this.jsonApi.questions[this.index].question
-          this.$store.dispatch('ADD_RESULT',{ "questions":question, "response": true})
-          
+          this.$store.dispatch('ADD_RESULT',this.answers)
           if(this.index+1 == Object.keys(this.jsonApi.questions).length){
+            console.log(this.answers)
+            
             this.$router.push('/' + this.$route.params.id +"/results");
           }else{
             this.index = this.index + 1
