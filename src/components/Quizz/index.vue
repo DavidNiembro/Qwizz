@@ -11,12 +11,12 @@
             <div class="col"></div>
             <div class="col-8">
             <form class="form">
-              <div v-for="(answer,index) of jsonApi.questions[index].answers" :key="answer.value" :answer="answer">
+              <div v-for="(answer,answerindex) of jsonApi.questions[index].answers" :key="answer.value" :answer="answer">
               <!--<input type="radio" v-bind:id="answer.id" v-bind:name="jsonApi.questions[index].question" v-bind:value="answer.value" v-model="userAnswer">
               <label v-bind:for="answer.id">{{answer.name}}</label>-->
                   <div class="inputGroup">
-                      <input v-bind:id="index" name="group" type="radio" v-bind:value="answer.value" v-model="userAnswer" />
-                      <label v-bind:for="index">{{answer.name}}</label>
+                      <input v-bind:id="answerindex" v-bind:name="index" type="radio" v-bind:value="answer.value" v-model="userAnswer" />
+                      <label v-bind:for="answerindex">{{answer.name}}</label>
                   </div>
               </div>
           </form>
@@ -29,8 +29,8 @@
       <div class="col"></div>
       <div class="col-9"></div>
       <div class="col">
-        <button v-if="index > 0" v-on:click="previous()" class="btn btn-primary">Revenir</button>
-        <button v-on:click="next()" class="btn btn-primary">Suivant</button>
+        <button v-if="index > 0" v-on:click="previous()" class="btn btn-danger">Revenir</button>
+        <button v-on:click="next()" class="btn btn-danger">Suivant</button>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ export default {
           });
           let question = this.jsonApi.questions[this.index]
           let test = {"id":question.id, "object":{"questions":question,"response":correct}}
-          this.$store.dispatch('ADD_RESULT',test)
+          this.$store.dispatch('ADD_RESULT',{"questions":question,"response":correct})
           console.log(this.$store.getters.RESULTS )
           if(this.index+1 == Object.keys(this.jsonApi.questions).length){
             this.$router.push('/' + this.$route.params.id +"/results");
