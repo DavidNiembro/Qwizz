@@ -12,6 +12,8 @@
             <div class="col-8">
             <form class="form">
               <!--<div v-for="answer of jsonApi.questions[index].answers" :key="answer.value" :answer="answer">-->
+              <!--<input type="radio" v-bind:id="answer.id" v-bind:name="jsonApi.questions[index].question" v-bind:value="answer.value" v-model="userAnswer">
+              <label v-bind:for="answer.id">{{answer.name}}</label>-->
                   <div class="inputGroup">
                       <input id="option1" name="group" type="radio"/>
                       <label for="option1">Option One</label>
