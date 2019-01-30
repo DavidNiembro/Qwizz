@@ -25,7 +25,9 @@ export default {
 
 .card {
     min-height: 250px;
-    background-color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0 0 0.35rem lightgray);
     margin-left: 20px;
     display:flex;
