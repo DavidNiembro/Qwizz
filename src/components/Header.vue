@@ -10,10 +10,10 @@
             <a class="nav-link" href="/"><div class="link">Home</div> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login"><div class="link">Login</div></a>
+            <a class="nav-link" href="/login"><div class="link">Se connecter</div></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register"><div class="link">Register</div></a>
+            <a class="nav-link" href="/register"><div class="link">S'enregistrer</div></a>
           </li>
         </ul>
       </div>

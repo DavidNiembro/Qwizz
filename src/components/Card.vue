@@ -17,13 +17,13 @@ export default {
     }
 }
 </script>
-<style lang="css"scoped>
+<style lang="css" scoped>
 .cardTitle{
-    margin-left: 20px;
+    padding-left: 20px;
     text-align: center;
     vertical-align: middle;
     color:#df091d;
-    margin-top:20px;
+    padding-top:20px;
 }
 .card {
     margin-top: 50px;
@@ -37,5 +37,15 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+}
+.cardTitle:hover{
+  color: #df091d;
+  text-decoration: underline;
+  text-decoration-color:#df091d;
+}
+.card:hover ~ .cardTitle{
+  color: #df091d;
+  text-decoration: underline;
+  text-decoration-color:#df091d;
 }
 </style>

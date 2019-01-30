@@ -6,7 +6,7 @@
       <div class="col"></div>
       <div class="col-10">
         <div class="container">
-          <h2>{{jsonApi.questions[index].question}}</h2>
+          <h2>{{jsonApi.questions[index].question}} ?</h2>
           <div class="row">
             <div class="col"></div>
             <div class="col-8">
@@ -187,7 +187,6 @@ export default {
 html {
   box-sizing: border-box;
 }
-
 
 
 </style>

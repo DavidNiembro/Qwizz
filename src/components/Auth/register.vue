@@ -5,11 +5,11 @@
             <div class="login-page">
                 <div class="form">
                     <form class="register-form">
-                      <input type="text" placeholder="name"/>
-                      <input type="password" placeholder="password"/>
-                      <input type="text" placeholder="email address"/>
-                      <button>create</button>
-                      <p class="message">Already registered? <a href="/login">Sign In</a></p>
+                      <input type="text" placeholder="Nom"/>
+                      <input type="password" placeholder="Mot de passe"/>
+                      <input type="text" placeholder="Adresse email"/>
+                      <button>Créer</button>
+                      <p class="message">Déjà enregistré?  <a href="/login">Se connecter</a></p>
                     </form>
                 </div>
             </div>
