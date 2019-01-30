@@ -1,11 +1,11 @@
 <template>
     <div class="col-4">
         <router-link :to="'/' + qwizz.id">
-            <div class="card" style="width: 18rem;" v-bind:style="{'background-image': 'url('+qwizz.image+')'}">
+            <div class="card" v-bind:style="{'background-image': 'url('+qwizz.image+')'}">
                 <div class="card-body">
                 </div>
             </div>
-                <div style="">
+                <div class="cardTitle">
 
                     <h2>{{qwizz.title}}</h2>
                 </div>
@@ -22,8 +22,13 @@ export default {
 }
 </script>
 <style lang="css"scoped>
-
+.cardTitle{
+    margin-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
 .card {
+    margin-top: 50px;
     min-height: 250px;
     background-size: cover;
     background-repeat: no-repeat;

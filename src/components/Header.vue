@@ -7,12 +7,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"><h5>Home</h5> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#"><h5>Login</h5></a>
           </li>
         </ul>
       </div>
     </nav>
 </template>
+<style>
+nav{
+    background: #df091d;
+    color: #FFFFFF;
+}
+h2{
+    background: #df091d;
+    color: #FFFFFF;
+}
+h5{
+    background: #df091d;
+    color: #FFFFFF;
+}
+</style>
