@@ -59,13 +59,9 @@ export default {
               };
           });
           let question = this.jsonApi.questions[this.index]
-          this.answers[question.id]=[];
-          this.answers[question.id].push({"questions":question,"response":correct})
-
-          this.$store.dispatch('ADD_RESULT',this.answers)
+          let test = {"id":question.id, "object":{"questions":question,"response":correct}}
+          this.$store.dispatch('ADD_RESULT',test)
           if(this.index+1 == Object.keys(this.jsonApi.questions).length){
-            console.log(this.answers)
-
             this.$router.push('/' + this.$route.params.id +"/results");
           }else{
             this.index = this.index + 1

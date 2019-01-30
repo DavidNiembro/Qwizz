@@ -30,7 +30,8 @@ export default new Vuex.Store({
             state.results = payload
         },
         ADD_RESULTS : (state,payload) => {
-            state.results.push(payload)
+            state.results[payload.id] = [];
+            state.results[payload.id].push(payload.object)
         },
         SET_QUIZZES : (state,payload) => {
             state.quizzes = payload
