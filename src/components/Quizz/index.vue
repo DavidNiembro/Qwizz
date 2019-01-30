@@ -11,18 +11,14 @@
             <div class="col"></div>
             <div class="col-8">
             <form class="form">
-              <!--<div v-for="answer of jsonApi.questions[index].answers" :key="answer.value" :answer="answer">-->
+              <div v-for="(answer,index) of jsonApi.questions[index].answers" :key="answer.value" :answer="answer">
               <!--<input type="radio" v-bind:id="answer.id" v-bind:name="jsonApi.questions[index].question" v-bind:value="answer.value" v-model="userAnswer">
               <label v-bind:for="answer.id">{{answer.name}}</label>-->
                   <div class="inputGroup">
-                      <input id="option1" name="group" type="radio"/>
-                      <label for="option1">Option One</label>
+                      <input v-bind:id="index" name="group" type="radio" v-bind:value="answer.value" v-model="userAnswer" />
+                      <label v-bind:for="index">{{answer.name}}</label>
                   </div>
-                  <div class="inputGroup">
-                      <input id="option2" name="group" type="radio"/>
-                      <label for="option2">Option One</label>
-                  </div>
-              <!--</div>-->
+              </div>
           </form>
             </div>
             <div class="col"></div>
@@ -69,6 +65,7 @@ export default {
           let question = this.jsonApi.questions[this.index]
           let test = {"id":question.id, "object":{"questions":question,"response":correct}}
           this.$store.dispatch('ADD_RESULT',test)
+          console.log(this.$store.getters.RESULTS )
           if(this.index+1 == Object.keys(this.jsonApi.questions).length){
             this.$router.push('/' + this.$route.params.id +"/results");
           }else{
