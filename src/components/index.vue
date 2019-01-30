@@ -9,9 +9,9 @@
     </div>
   </div>
   <div class="row" style="margin-top:25px">
-    
+
     <Card v-for="qwizz of data.quizzes" :key="qwizz.name" :qwizz="qwizz"/>
-    
+
   </div>
 </div>
 </div>
@@ -61,4 +61,6 @@ li {
 a {
   color: #42b983;
 }
+
+
 </style>
