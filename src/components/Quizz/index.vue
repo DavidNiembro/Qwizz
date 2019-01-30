@@ -29,7 +29,7 @@
       <div class="col"></div>
       <div class="col-9"></div>
       <div class="col">
-        <button v-if="index > 0" v-on:click="previous()" class="btn btn-danger">Revenir</button>
+        <!--<button v-if="index > 0" v-on:click="previous()" class="btn btn-danger">Revenir</button>-->
         <button v-on:click="next()" class="btn btn-danger">Suivant</button>
       </div>
     </div>
@@ -65,7 +65,6 @@ export default {
           let question = this.jsonApi.questions[this.index]
           let test = {"id":question.id, "object":{"questions":question,"response":correct}}
           this.$store.dispatch('ADD_RESULT',{"questions":question,"response":correct})
-          console.log(this.$store.getters.RESULTS )
           if(this.index+1 == Object.keys(this.jsonApi.questions).length){
             this.$router.push('/' + this.$route.params.id +"/results");
           }else{
