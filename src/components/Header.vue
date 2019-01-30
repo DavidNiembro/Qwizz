@@ -12,6 +12,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/login"><div class="link">Login</div></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register"><div class="link">Register</div></a>
+          </li>
         </ul>
       </div>
     </nav>
