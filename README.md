@@ -1,4 +1,4 @@
-# qwizz
+# Qwizz
 
 > A quiz app in vuejs
 
