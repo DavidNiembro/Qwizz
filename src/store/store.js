@@ -69,15 +69,15 @@ export default new Vuex.Store({
             context.commit('SET_QUIZZ',data)
         },
         LOGIN : async (context,user) =>{
-            localStorage.setItem('token', JSON.stringify('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0IiwicGFzc3dvcmQiOiIkcGJrZGYyLXNoYTI1NiQyMDAwMCRjNjRWd3RnN0IuQThKeVJrN1AzL1h3JG9BRDloUnVEQTVkWVpKR1Y2cDNpdDBzYVFqdlFBemFZbi9wNW1kSGRDbDQifQ.P-KfTO8nq5oQNC_bIAY5VKOeNLyNbGE-gGrf0oIKQjc'));
-            let { data } = await Axios.post('http://awa-quizz.herokuapp.com/api/login',
+
+            let data = await Axios.post('http://awa-quizz.herokuapp.com/api/login',
             {
                 username: user.username,
                 password: user.password
-                
-            }).then(function (response) {
-                console.log(response);
             })
+            localStorage.setItem('token', JSON.stringify(data.data.token));
+
+            console.log(data.data.token);
         },
         LOGOUT : async (context,user) =>{
             localStorage.removeItem('token');

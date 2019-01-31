@@ -4,9 +4,9 @@
             <div class="login-page">
                 <div class="form">
                     <form class="login-form">
-                      <input type="text" placeholder="Nom'utilisateur"/>
-                      <input type="password" placeholder="Mot de passe"/>
-                      <button v-on:click="login()">Connexion</button>
+                      <input type="text" v-model="username" placeholder="Nom'utilisateur"/>
+                      <input type="password" v-model="password" placeholder="Mot de passe"/>
+                      <button v-on:click.prevent="login()">Connexion</button>
                       <p class="message">Pas encore enregistré ? <a href="/register">Créer un compte</a></p>
                     </form>
               </div>
@@ -19,12 +19,16 @@
 import Header from '../Header.vue';
 export default {
     name:'login',
+    data: {
+        username: null,
+        password:null
+    },
     components:{
         Header
     },
     methods: {
-        login: function () {
-            this.$store.dispatch('LOGIN',{username: 'guest',password:'guest123'});
+        async login () {
+            await this.$store.dispatch('LOGIN',{username: this.username ,password: this.password});
             this.$router.push('/');
         }
     }
