@@ -30,7 +30,7 @@
       <div class="col-9"></div>
       <div class="col">
         <!--<button v-if="index > 0" v-on:click="previous()" class="btn btn-danger">Revenir</button>-->
-        <button v-on:click="next()" class="btn btn-danger">Suivant</button>
+        <button v-on:click="next()" class="buttonRetour">Suivant</button>
       </div>
     </div>
   </div>
@@ -186,6 +186,27 @@ export default {
 
 html {
   box-sizing: border-box;
+}
+.buttonRetour {
+    background-color: red;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+}
+.buttonRetour:hover {
+    background-color: white;
+    color:red;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1px solid red;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

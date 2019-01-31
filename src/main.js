@@ -18,6 +18,7 @@ const routes = [
     {path: '/', component: index},
     {path: '/:id', component: quizz},
     {path: '/:id/results', component: results, props: true},
+    {path: '*', redirect: '/'}
 ]
 
 const router = new VueRouter({
@@ -25,6 +26,16 @@ const router = new VueRouter({
     mode:'history'
 })
 
+router.beforeEach((to, from, next) => {
+
+    const publicPages = ['/login', '/register'];
+    const authRequired = !publicPages.includes(to.path);
+    const loggedIn = localStorage.getItem('token');
+    if (authRequired && !loggedIn) {
+      return next('/login');
+    }
+    next();
+  })
 
 new Vue({
     router,

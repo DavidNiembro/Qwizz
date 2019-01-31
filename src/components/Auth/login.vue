@@ -6,7 +6,7 @@
                     <form class="login-form">
                       <input type="text" placeholder="Nom'utilisateur"/>
                       <input type="password" placeholder="Mot de passe"/>
-                      <button>Connexion</button>
+                      <button v-on:click="login()">Connexion</button>
                       <p class="message">Pas encore enregistré ? <a href="/register">Créer un compte</a></p>
                     </form>
               </div>
@@ -22,6 +22,12 @@ export default {
     components:{
         Header
     },
+    methods: {
+        login: function () {
+            this.$store.dispatch('LOGIN',{username: 'guest',password:'guest123'});
+            this.$router.push('/');
+        }
+    }
 }
 </script>
 <style scoped>
