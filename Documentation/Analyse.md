@@ -6,17 +6,17 @@
 
    Le site de la Migros permet de voir toutes le questions en même temps. En effet tout est sur une seule page.
 
-   Même les réponses s'affichent à la fin de la page. De plus le quizz permet graçe aux réponses séléctionnées de contruire une réponse finale en live ce qui permet de "deviner" les autres réponses si on connait après plusieurs réponses séléctionnées le mot de la fin. Une forme de triche peut donc apparaître et fausser les résultats et par conséquance les statistiques. 
+   Même les réponses s'affichent à la fin de la page. De plus le quizz permet graçe aux réponses séléctionnées de contruire une réponse finale en live ce qui permet de "deviner" les autres réponses si on connait après plusieurs réponses séléctionnées le mot de la fin. Une forme de triche peut donc apparaître et fausser les résultats et par conséquance les statistiques.
 
    Les boutons sont des réctangles qui intègrent les réponses possible à la question. Le début du rectangle contient une lettre qui servira à contruire la réponse final.
 
    La box change de couleur quand elle est séléctionnée, ce qui permet à l'utilisateur de savoir en tout temps quels question est déjà finie et quel est la réponse qu'il a séléctionné.
 
-   Il n'est pas possible de vérifier les réponses après coup car il n'y a pas de page de validation et on ne peut pas avoir la réponse si on ne connait pas les solutions. 
+   Il n'est pas possible de vérifier les réponses après coup car il n'y a pas de page de validation et on ne peut pas avoir la réponse si on ne connait pas les solutions.
 
 2. Buzzfeed
 
-   Le quiz de Buzzfeed se présente sur une seule page ce qui permet de voir l'ensemble des réponses en un coup. Chaque réponse de question se matérialise par un texte et une image représentative de la réponse. 
+   Le quiz de Buzzfeed se présente sur une seule page ce qui permet de voir l'ensemble des réponses en un coup. Chaque réponse de question se matérialise par un texte et une image représentative de la réponse.
 
    Les réponses séléctionnées sont mises en avant afin d'avoir un visuel des questions déjà répondu et la réponse séléctionée.
 
@@ -28,7 +28,7 @@
 
    Le site présente une question par page. Pour voir les autres questions il faut répondre à la réponse actuelle. Toutefois il y a une indication au-dessus de la question qui permet de se situer dans l'avancement du quiz.
 
-   Il n'y a jamais de bouton suivant. Les réponses sont le bouton qui permet de passer aux questions suivantes. De ce fait il est impossible de savoir quelles réponses ont été séléctionnées dans les précédente questions. 
+   Il n'y a jamais de bouton suivant. Les réponses sont le bouton qui permet de passer aux questions suivantes. De ce fait il est impossible de savoir quelles réponses ont été séléctionnées dans les précédente questions.
 
    Le résultat est tout de suite annoncé avec une petite video et un texte explicatif qui nous donne plus d'information sur les réponses et la question à la quelle ont vient de répondre.
 
@@ -36,7 +36,7 @@
 
 1. Migros
 
-   Le site reprend des standards acctuelle pour l'ensemble du layout composant la page du quiz. Toutefois quelques éléments sortent du lot. Les box grises qui constituent les réponses sembles venir d'un autre temps. Trés alongées et fines, elle ne sembent pas en accord avec l'UI du reste de la page. De plus une fois la réponse séléctionnée, la couleur jaune, pour mettre en avant la séléction, ne sembe pas non plus reprendre la charte graphique du site. La Font est bien celle utilisée dans le reste du site qui fini par rendre le tout en accord avec la charte, 
+   Le site reprend des standards acctuelle pour l'ensemble du layout composant la page du quiz. Toutefois quelques éléments sortent du lot. Les box grises qui constituent les réponses sembles venir d'un autre temps. Trés alongées et fines, elle ne sembent pas en accord avec l'UI du reste de la page. De plus une fois la réponse séléctionnée, la couleur jaune, pour mettre en avant la séléction, ne sembe pas non plus reprendre la charte graphique du site. La Font est bien celle utilisée dans le reste du site qui fini par rendre le tout en accord avec la charte,
 
    |                                           | Commentaire positif- négatif                                 |
    | ----------------------------------------- | ------------------------------------------------------------ |
@@ -61,7 +61,7 @@
    | Lisibilité est contraste du texte         | Le texte n'est pas très visible en noir sur font gris.       |
    | Formes personnalisées ( Icones / ... )    |                                                              |
 
-   
+
 
 2. Buzzfeed
 
@@ -98,7 +98,7 @@
 
    Le rouge et le blanc cassé sont les couleurs principales. Elles sont très bien utilisées. Les logos utilisés dans le site utilisent aussi les couleurs du site.
 
-   Le site n’est pas chargé en information inutile. Simple et aéré, L’utilisateur voit en un coup d’oeil l'information principale de la page. 
+   Le site n’est pas chargé en information inutile. Simple et aéré, L’utilisateur voit en un coup d’oeil l'information principale de la page.
 
    La taille des polices sont grande sans pour autant être démesurées. Les éléments savent se distinguer par leurs propriétés s’il sont cliquable ou pas, s’ils sont sélectionnée ou pas.
 
@@ -129,10 +129,26 @@
    | Lisibilité est contraste du texte         |                                                              |
    | Formes personnalisées ( Icones / ... )    |                                                              |
 
-## Synthèse 
+## Synthèse
 
 Au vu de qui a été analysé nous avons décidé que plusieurs élèments seraient repris du site alcohol-facts. En effet ce site nous semble être complètement dans l'air du temps tant au niveaux des fonctionnalitées que de l'UI/UX.
 
 Au niveau de l'UX nous allons donc reprendre l'affichage de chaque question sur une page ce qui permet de garder l'utilisateur concentré sur une seule donées à la fois. Les résultats seront donnés à la fin du quiz tout comme le site BuzzFeed pour que l'utilisateur ai son score une fois le quiz fini. Pour laisser à l'utilisateur le choix de passer à la prochaine question, un bouton suivant permettra de valider le choix. Si aucune réponse n'est choisit, la réponse sera automatiquement fausse.
 
 Au niveau de l'UI, les choix se portent sur les couleurs rouge, blanc et noir comme le site  Alcohol-facts. Le header sera aussi reprit.
+
+## Synthèse Wireframe
+
+### Liste quizz
+
+Nous avons penser à deux manière d'afficher la liste des quizz. La première est un peu plus originale mais plus compliquée. Nous n'avions pas pris en compte le fait qu'il puisse y avoir des images alors nous avions ajouter un bouton pour la selection des quizz.
+Pour la deuxième maquette nous avons remplacer le tout par une image ainsi qu'un texte en dessous avec le titre.
+
+### Question
+Nous avons penser a deux design different. Le premier sous forme de carte de la même manière que la liste des quizz. Avec la question à l'intérieure et la possibilité de la cliquer pour la séléctionner.
+Le deuxième design sous forme de bouton radio stylisé.
+Nous avons trouvé le deuxième design plus adapté a notre
+
+### Login
+
+Nous somme resté sur quelque chose de simple avec simplement un mail et un mot de passe . Les deux variantes ne change que très peu. Le seul changement sont la positions des labels par rappot aux champ texte.
