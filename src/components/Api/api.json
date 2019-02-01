@@ -1,0 +1,45 @@
+{
+    "type":"success",
+    "quizzes":[
+        {
+            "id":1,
+            "name": "Quizz 1",
+            "questions":[
+                {
+                    "name": "Test",
+                    "description":"Test",
+                    "answers":[
+                        {
+                            "value" : "Test",
+                            "bool": 1
+                        },
+                        {
+                            "value" : "Test",
+                            "bool": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name": "Quizz 2",
+            "questions":[
+                {
+                    "name": "Tests",
+                    "description":"Tests",
+                    "answers":[
+                        {
+                            "value" : "Tests",
+                            "bool": 1
+                        },
+                        {
+                            "value" : "Tests",
+                            "bool": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

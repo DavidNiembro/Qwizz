@@ -1,0 +1,56 @@
+{
+    "type":"success",
+    "quizz":
+    {
+        "id":1,
+        "title": "Quizz 1",
+        "questions":[
+            {
+                "question": "Question 1",
+                "image":"image1",
+                "answers":[
+                    {
+                        "value" : "Réponse 1.1",
+                        "correct": 1
+                    },
+                    {
+                        "value" : "Réponse 1.2",
+                        "correct": 0
+                    }
+                ]
+            },
+            {
+                "question": "Question 2",
+                "image":"image2",
+                "answers":[
+                    {
+                        "value" : "Réponse 2.1",
+                        "correct": 1
+                    },
+                    {
+                        "value" : "Réponse 2.2",
+                        "correct": 0
+                    },
+                    {
+                        "value" : "Réponse 2.3",
+                        "correct": 0
+                    }
+                ]
+            },
+            {
+                "question": "Question 3",
+                "image":"image2",
+                "answers":[
+                    {
+                        "value" : "Réponse 3.1",
+                        "correct": 1
+                    },
+                    {
+                        "value" : "Réponse 3.2",
+                        "correct": 0
+                    }
+                ]
+            }
+        ]
+    }
+}
