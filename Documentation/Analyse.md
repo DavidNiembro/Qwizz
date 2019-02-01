@@ -72,15 +72,15 @@
    |                                           | Commentaire positif- négatif                                 |
    | ----------------------------------------- | ------------------------------------------------------------ |
    | Style (Flat / texture / Illustration )    | Le style est propre au thême abordé. Toutes les illustrations sont en relation avec l'univers du thême |
-   | Rapport au public cible                   |                                                              |
+   | Rapport au public cible                   | Grande cohérance entre le style et le message que le lecteur du quizz perçoit |
    | Rapport au logo                           |                                                              |
    | Originalité                               |                                                              |
-   | Animations / Transitions                  |                                                              |
+   | Animations / Transitions                  | Il n'y a pa beaucoup d'animation. Il n'y a qu'une animation qui intervient lorsque l'utilisateur clique sur la réponse ce qui permet de la mettre en évidence |
    | Mise en page (One page/ Responsive)       | C'est un quiz en One Page. Tout est reponsive et peut être utilisé sur mobile |
    | Header ( Taille du slider )               | La taille du header est assez fine pour ne pas gêner l'utilisation de la page principale sur les petits écrans. |
-   | Alignement                                |                                                              |
+   | Alignement                                | Tout est aligné au centre                                    |
    | Espacement                                |                                                              |
-   | Formes ( Arrondis / Angles / ... )        |                                                              |
+   | Formes ( Arrondis / Angles / ... )        | Toutes les formes visible dans le quiz sont des carrés ou rectangles |
    | Rappel des formes                         |                                                              |
    | Navigation (Menu / Sous-menu)             |                                                              |
    | Couleurs utilisées                        | Aucune couleurs n'est vraiment dominante. Le noir et le blanc sont présent. |
@@ -88,8 +88,8 @@
    | Rappel des couleurs                       |                                                              |
    | Fonts utilisées                           | Deux fonts sont utilisé dans ce quiz. Une font très spécifique qui fait référence à la font utilisé dans les jeux vidéo de l'univers Pokémon. |
    | Relation des fonts (Contraste / conflit ) |                                                              |
-   | Hiérarchisation du texte                  |                                                              |
-   | Lisibilité est contraste du texte         |                                                              |
+   | Hiérarchisation du texte                  | Le text des réponses semble être petit mais cela n'est pas sont but d'être très visible. En effet les réponses sont plutôt définies par une image. |
+   | Lisibilité est contraste du texte         | Les texts sont bien visible car le noir sur blanc n'est pas difficile à lire. |
    | Formes personnalisées ( Icones / ... )    |                                                              |
 
 3. Alcohol-facts
@@ -109,33 +109,33 @@
    |                                           | Commentaire positif- négatif                                 |
    | ----------------------------------------- | ------------------------------------------------------------ |
    | Style (Flat / texture / Illustration )    | Flat Design                                                  |
-   | Rapport au public cible                   |                                                              |
+   | Rapport au public cible                   | Nous ne voyons pas quel pourrait être le rapport avec le public cible. Si ce n'est peut-être la couleur rouge faisant écho avec le vin du même nom |
    | Rapport au logo                           |                                                              |
    | Originalité                               |                                                              |
-   | Animations / Transitions                  |                                                              |
+   | Animations / Transitions                  | Animation avec des videos qui sont intercalées entre chaque question |
    | Mise en page (One page/ Responsive)       | C'est un quiz en Multi Page. Tout est reponsive et peut être utilisé sur mobile |
    | Header ( Taille du slider )               |                                                              |
-   | Alignement                                |                                                              |
-   | Espacement                                |                                                              |
-   | Formes ( Arrondis / Angles / ... )        |                                                              |
+   | Alignement                                | Tout est aligné au centre de la page ce qui permet d'avoir une concentration maximale sur un seul élément à la fois |
+   | Espacement                                | Le site à des grands espacments entre les zones ce qui lui permet d'être aéré |
+   | Formes ( Arrondis / Angles / ... )        | Tout est assez carré                                         |
    | Rappel des formes                         |                                                              |
    | Navigation (Menu / Sous-menu)             |                                                              |
-   | Couleurs utilisées                        |                                                              |
+   | Couleurs utilisées                        | La couleur rouge est très présente ce qui interpelle beaucoup. Le blanc est dominant car c'est le font de toutes les pages. |
    | Rapport au logo                           |                                                              |
-   | Rappel des couleurs                       |                                                              |
+   | Rappel des couleurs                       | Le rouge se trouve a quasi tous les niveaux du quiz. Chaque bouton, texte, réponses, peut en contenir. |
    | Fonts utilisées                           |                                                              |
    | Relation des fonts (Contraste / conflit ) |                                                              |
-   | Hiérarchisation du texte                  |                                                              |
-   | Lisibilité est contraste du texte         |                                                              |
+   | Hiérarchisation du texte                  | Les titres peuvent être sans difficultés différenciées d'un texte normal le tout est cohérant et guide l'oeil de l'utilisateur dans la lecture de la page. |
+   | Lisibilité est contraste du texte         | Les  couleurs utilisée permettent de faire ressortir les textes et par conséquence de les rendre très lisible |
    | Formes personnalisées ( Icones / ... )    |                                                              |
 
 ## Synthèse
 
 Au vu de qui a été analysé nous avons décidé que plusieurs élèments seraient repris du site alcohol-facts. En effet ce site nous semble être complètement dans l'air du temps tant au niveaux des fonctionnalitées que de l'UI/UX.
 
-Au niveau de l'UX nous allons donc reprendre l'affichage de chaque question sur une page ce qui permet de garder l'utilisateur concentré sur une seule donées à la fois. Les résultats seront donnés à la fin du quiz tout comme le site BuzzFeed pour que l'utilisateur ai son score une fois le quiz fini. Pour laisser à l'utilisateur le choix de passer à la prochaine question, un bouton suivant permettra de valider le choix. Si aucune réponse n'est choisit, la réponse sera automatiquement fausse.
+Au niveau de l'UX nous allons donc reprendre l'affichage de chaque question sur une page ce qui permet de garder l'utilisateur concentré sur une seule donées à la fois. Les résultats seront donnés à la fin du quiz tout comme le site BuzzFeed pour que l'utilisateur ai son score une fois le quiz fini. Pour laisser à l'utilisateur le choix de passer à la prochaine question, un bouton suivant permettra de valider le choix. Si aucune réponse n'est choisit, la réponse sera automatiquement fausse. La paage principale se constitura de plusieurs carré avec le nom du quiz juste en-dessous.
 
-Au niveau de l'UI, les choix se portent sur les couleurs rouge, blanc et noir comme le site  Alcohol-facts. Le header sera aussi reprit.
+Au niveau de l'UI, les choix se portent sur les couleurs rouge, blanc et noir comme le site  Alcohol-facts. Le header sera aussi reprit. De grand espaces seront mis en place pour permettre au site d'être simple à la lecture. 
 
 ## Synthèse Wireframe
 
