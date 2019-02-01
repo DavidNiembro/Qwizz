@@ -141,7 +141,7 @@ Au niveau de l'UI, les choix se portent sur les couleurs rouge, blanc et noir co
 
 ### Liste quizz
 
-Nous avons penser à deux manière d'afficher la liste des quizz. La première est un peu plus originale mais plus compliquée. Nous n'avions pas pris en compte le fait qu'il puisse y avoir des images alors nous avions ajouter un bouton pour la selection des quizz.
+Nous avons penser à deux manières d'afficher la liste des quizz. La première est un peu plus originale mais plus compliquée. Nous n'avions pas pris en compte le fait qu'il puisse y avoir des images alors nous avions ajouter un bouton pour la selection des quizz.
 Pour la deuxième maquette nous avons remplacer le tout par une image ainsi qu'un texte en dessous avec le titre.
 
 ### Question
