@@ -76,8 +76,15 @@ export default new Vuex.Store({
                 password: user.password
             })
             localStorage.setItem('token', JSON.stringify(data.data.token));
+        },
+        REGISTER : async (context,user) =>{
 
-            console.log(data.data.token);
+            let data = await Axios.post('http://awa-quizz.herokuapp.com/api/register',
+            {
+                username: user.username,
+                password: user.password
+            })
+            localStorage.setItem('token', JSON.stringify(data.data.token));
         },
         LOGOUT : async (context,user) =>{
             localStorage.removeItem('token');

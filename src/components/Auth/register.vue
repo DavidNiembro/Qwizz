@@ -5,11 +5,10 @@
             <div class="login-page">
                 <div class="form">
                     <form class="register-form">
-                      <input type="text" placeholder="Nom"/>
-                      <input type="password" placeholder="Mot de passe"/>
-                      <input type="text" placeholder="Adresse email"/>
-                      <button>Créer</button>
-                      <p class="message">Déjà enregistré?  <a href="/login">Se connecter</a></p>
+                        <input type="text" v-model="username" placeholder="Nom d'utilisateur"/>
+                        <input type="password" v-model="password" placeholder="Mot de passe"/>
+                        <button v-on:click.prevent="register()">Créer</button>
+                        <p class="message">Déjà enregistré?  <a href="/login">Se connecter</a></p>
                     </form>
                 </div>
             </div>
@@ -21,9 +20,19 @@
 import Header from '../Header.vue';
 export default {
     name:'register',
+    data: {
+        username: null,
+        password:null
+    },
     components:{
         Header
     },
+    methods: {
+        async register () {
+            await this.$store.dispatch('REGISTER',{username: this.username ,password: this.password});
+            this.$router.push('/');
+        }
+    }
 }
 </script>
 <style scoped>
